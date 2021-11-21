@@ -29,3 +29,12 @@ docker-compose exec app /bin/bash
 ```bash
 docker-compose rm
 ```
+
+### rails サーバー起動
+
+```bash
+# アタッチ後
+bundle exec rails s -b 0.0.0.0 -p $PORT
+```
+
+http://127.0.0.1:3000
