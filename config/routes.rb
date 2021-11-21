@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  resource :redis, only: [] do
+    get "/session_set", to: "redis#session_set"
+    get "/session_get", to: "redis#session_get"
+  end
 end
