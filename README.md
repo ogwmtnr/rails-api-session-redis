@@ -37,4 +37,7 @@ docker-compose rm
 bundle exec rails s -b 0.0.0.0 -p $PORT
 ```
 
-http://127.0.0.1:3000
+- http://127.0.0.1:3000/redis/session_set
+  - 現在時刻を session に格納します
+- http://127.0.0.1:3000/redis/session_get
+  - session に格納した時刻を返します
