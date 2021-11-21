@@ -1,0 +1,1 @@
+# API 専用アプリケーション Rails session_store redis サンプル
